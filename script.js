@@ -6,6 +6,8 @@
 //make each section dynamically click
 
 
+window.alert("Welcome to GlobaTrek Getaways")
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -48,7 +50,7 @@ answers.forEach((event) => {
 });
 
 
-var acc = document.getElementsByClassName("faq_question");
+const acc = document.getElementsByClassName("faq_question");
 let i;
 
 for (let i = 0; i < acc.length; i++) {
@@ -65,3 +67,26 @@ for (let i = 0; i < acc.length; i++) {
     }
   });
 }
+
+let booknow = document.getElementById("book_now")
+booknow.innerText = "Book Vacation"
+
+document.addEventListener("DOMContentLoaded", function () {
+  let visaContainer = document.getElementById("visa_link");
+
+  let visaButton = document.createElement("button");
+  visaButton.textContent = "Go to Visa Information"; 
+  visaButton.style.backgroundColor = "#FE7F2D";
+  visaButton.style.borderRadius = "5px";
+  visaButton.style.padding = "7px";
+  visaButton.style.color = "#233D4D"
+
+  visaButton.addEventListener("click", function () {
+    event.preventDefault();
+    window.open("https://travel.state.gov/content/travel/en/us-visas.html", "_blank"); 
+    visaButton.innerText = "Taking you the State Department Website"
+    
+  });
+
+  visaContainer.appendChild(visaButton);
+});

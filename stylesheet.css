@@ -2,7 +2,7 @@
 https://coolors.co/palette/233d4d-fe7f2d-fcca46-a1c181-619b8a
 */
 
-.hero_image {
+#hero_image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1619467416348-6a782839e95f?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     height: 30em;
     background-position: center;
@@ -11,7 +11,7 @@ https://coolors.co/palette/233d4d-fe7f2d-fcca46-a1c181-619b8a
     position: relative;
 }
 
-.company_name button {
+#company_name button {
     border: none;
     outline: 0;
     display: inline-block;
@@ -22,12 +22,12 @@ https://coolors.co/palette/233d4d-fe7f2d-fcca46-a1c181-619b8a
     cursor: pointer;
   }
   
-  .company_name button:hover {
+  #company_name button:hover {
     background-color: #555;
     color: white;
   }
 
-.company_name {
+#company_name {
     text-align: center;
     position: absolute;
     top: 20%;
@@ -49,10 +49,15 @@ h3{
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: #FCCA46;
+    font-size: xx-large;
+    border: none;
+    
 }
 
 /* Destination Info Section */
     .destination_pictures{
+        display: block;
+        margin: 0 auto;
         height: 14em;
         width: 18em;
         border: 2px solid #FE7F2D;
@@ -61,11 +66,13 @@ h3{
     #slideshowcontainer{
         max-width: 1000px;
         position: relative;
-        margin: auto;
+        margin: 0 auto;
+        display: block;
     }
 
     #myslides_fade{
         display: none;
+        text-align: center;
     }
 
     
@@ -74,10 +81,10 @@ h3{
         color: #FE7F2D;
         font-size: 15px;
         padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
+        display: block;
         width: 100%;
         text-align: center;
+        margin-top: 5px;
     }
 
 
@@ -126,12 +133,10 @@ a:link:visited:active{
 
   /* Start of Booking Section  */
   
-  .booking_form{
-    border-style: dotted;
+  #booking_form{
     background: #A1C181;
-    border-color: red;
     color: #233D4D;
-    width: 35em;
+    width: 45em;
     height: 25em;
   }
 
@@ -147,21 +152,7 @@ input, textarea, select {
     border-radius: 5px;
 }
 
-  /* input[type=text] {
-    width: 25%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 10%;
-  }
-
-  select {
-    width: 10%;
-    padding: 16px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #f1f1f1;
-  } */
+ 
   /* End of Booking Section */
 
 
@@ -199,4 +190,6 @@ input, textarea, select {
     font-weight: 400;
     color: #233D4D;
   }
+  
+
   

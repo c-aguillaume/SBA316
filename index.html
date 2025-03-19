@@ -16,17 +16,17 @@
 <body>
 
 
-    <section class="welcome_landing_section">
-        <div class="hero_image">
+    <section id="welcome_landing_section">
+        <div id="hero_image">
             <!-- <img src="https://images.unsplash.com/photo-1619467416348-6a782839e95f?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"> -->
         </div>
-        <div class="company_name">
+        <div id="company_name">
             <h1>GlobaTrek Getaways</h1>
             <p>Explore More, Worry Less!</p>
-            <button>Book Now</button>
+            <a href="#how_to_book_section"><button id="book_now">Book Now</button></a>
         </div>
     </section>
-    <section class="booking_benefits_section">
+    <section id="booking_benefits_section">
         <div>
             <h3>Why Book With Us?</h3>
             <ul>
@@ -36,8 +36,8 @@
             </ul>
         </div>
     </section>
-    <section class="destination_info_section">
-        <div class="slideshow_container">
+    <section id="destination_info_section">
+        <div id="slideshow_container">
             <h3>Top Destinations to visit</h3>
             <p>The world is your oyster. Feel the sand in your toes. Feel the cold in your breath. Enjoy the calm in the
                 desert.
@@ -97,12 +97,8 @@
                         alt="Image of the Swiss Alps">
                 </a>
                 <figcaption>Peru</figcaption>
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </figure>
         </div>
-        <br>
-
         <!-- The dots/circles -->
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
@@ -111,20 +107,15 @@
             <span class="dot" onclick="currentSlide(5)"></span>
             <span class="dot" onclick="currentSlide(6)"></span>
         </div>
-        </figure>
-        </div>
-        <div class="package_info_section">
-            <h3>Packages</h3>
-            <p>Want us to do all the work for you? Not a fan of planning every detail in your trip. Below we have
-                curated custom
-                experiences on whatever you dream of while on vacation.</p>
-            <ul>
-                <li><a href="https://www.freecodecamp.org/learn" target="_blank">Group Travels</a></li>
-                <li><a href="https://www.freecodecamp.org/learn" target="_blank">Private Tours</a></li>
-            </ul>
+        <div id="visa_info_section">
+            <h3>Visa Information for Travelers</h3>
+            <p id="visarequirements">Before traveling, check visa requirements for your destination. The U.S. State
+                Department provides official visa guidelines, application details, and entry requirements.</p>
+            <div id="visa_link"></div>
+            <div id="visa_message"></div>
         </div>
     </section>
-    <section class="how_to_book_section">
+    <section id="how_to_book_section">
         <div>
             <h3>How to Book (3 Easy Steps!)</h3>
             <ul>
@@ -133,11 +124,10 @@
                 <li>Pack & Go! – We take care of everything else – just show up and enjoy.</li>
             </ul>
         </div>
-        <div></div>
     </section>
-    <section class="sample_itineraries_section">
+    <section id="sample_itineraries_section">
         <h3>Sample Itinerary</h3>
-        <div class="sample_itinerary_cuba">
+        <div class="sample_itinerary">
             <h4>Cuba (Thursday – Sunday)</h4>
             <ul>
                 <li>Thursday: Arrive in Havana, check into hotel, group welcome dinner</li>
@@ -146,7 +136,7 @@
                 <li>Sunday: Free morning, beach visit, flight home</li>
             </ul>
         </div>
-        <div class="sample_itinerary_curacao">
+        <div class="sample_itinerary">
             <h4>Curacao (Thursday – Sunday)</h4>
             <ul>
                 <li>Thursday: Arrive in Willemstad, check into oceanfront hotel, welcome drinks
@@ -159,7 +149,7 @@
                 </li>
             </ul>
         </div>
-        <div class="sample_itinerary_thailand">
+        <div class="sample_itinerary">
             <h4>Thailand (Thursday – Sunday)</h4>
             <ul>
                 <li>Thursday: Arrive in Bangkok, check-in, welcome dinner with Thai cuisine
@@ -171,7 +161,7 @@
                 <li>Sunday: Street food breakfast, temple visit, airport transfer
                 </li>
             </ul>
-            <div class="sample_itinerary_belize">
+            <div class="sample_itinerary">
                 <h4>Belize (Thursday – Sunday)</h4>
                 <ul>
                     <li>Thursday: Arrive in Belize City, transfer to island resort, sunset dinner
@@ -186,8 +176,8 @@
             </div>
         </div>
     </section>
-    <section class="booking_section">
-        <div class="booking_form">
+    <section id="booking_section">
+        <div id="booking_form">
             <form action="submit">
                 <label for="bookingform">Booking Form</label><br>
                 <select id="person_title" name="title">
@@ -197,25 +187,25 @@
                     <option value="mr">Ms.</option>
                 </select>
                 <label for="fname">First Name</label>
-                <input type="text">
+                <input required type="text">
                 <label for="lname">Last Name</label>
-                <input type="text">
+                <input required type="text"><br>
                 <label for="address1form">Address</label>
                 <input type="text">
                 <label for="address2form">Address Line 2</label>
-                <input type="text">
+                <input type="text"><br>
                 <label for="cityform">City</label>
-                <input type="text">
+                <input required type="text">
                 <label for="sate">State</label>
-                <input type="text">
+                <input required type="text">
                 <label for="address">Zip Code</label>
-                <input type="text">
+                <input required type="text">
                 <label for="phonenumber">Phone Number</label>
-                <input type="text" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$">
+                <input required type="text" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$">
                 <label for="email">Email</label>
-                <input type="email">
+                <input required type="email"><br>
                 <label for="dobmonth">Date of Birth</label>
-                <input type="date">
+                <input required type="date">
                 <label for="airportbase">Choose your Home Airport</label>
                 <select>
                     <option value="blank"></option>
@@ -268,7 +258,6 @@
             </div>
         </div>
     </section>
-
 
 
 </body>
